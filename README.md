@@ -33,7 +33,7 @@ This ensures that you have a clean environment with the necessary dependencies i
 
 ## Usage
 
-1. Clone this repository to your local machine and in your terminal, go to the project directory.
+1. Clone this repository to your local machine and go to the project directory.
 ```bash
 git clone https://github.com/KelvinPuyam/Hand-Gesture-Recognition.git
 ```
