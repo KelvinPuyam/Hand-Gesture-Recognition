@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 This ensures that you have a clean environment with the necessary dependencies installed to run the project.
 
-## Usage
+## Running the Python script
 
 1. Clone this repository to your local machine and go to the project directory.
 ```bash
@@ -51,7 +51,27 @@ python hand_gesture_detection.py
 4. Ensure your webcam is connected and functional.
 5. Perform hand gestures in front of the webcam to observe real-time recognition.
 
-## Contributing
+## Running the Flask Web Application
+
+After cloning the repository and navigating to the project directory, ensure you have installed the required dependencies.
+
+Run the Flask web application using the following command:
+
+```bash
+python app.py
+```
+
+When you run `app.py`, the Flask web application initializes the hand gesture detection system using MediaPipe, TensorFlow, and OpenCV. It starts a server listening on [http://127.0.0.1:5000](http://127.0.0.1:5000).
+
+## Accessing the Application
+
+Ensure your webcam is connected and functional.
+
+Open a web browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000).
+
+Upon accessing the provided URL, the web application interface for hand gesture detection will be displayed. You can perform hand gestures in front of the webcam to observe real-time recognition.
+
+## Contributing Guidelines
 
 Contributions are welcome! Feel free to open issues or submit pull requests to improve this project.
 
