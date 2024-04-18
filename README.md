@@ -6,8 +6,10 @@ Hand Gesture Recognition is a significant area of research in Human-Computer Int
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- [Running the Python script](#running-the-python-script)
+- [Running the Flask Web Application](#running-the-flask-web-application)
+- [Accessing the Application](#accessing-the-application)
+- [Contributing Guidelines](#contributing-guidelines)
 - [License](#license)
 
 ## Introduction
