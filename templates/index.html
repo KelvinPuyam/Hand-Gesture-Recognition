@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+        #videoContainer {
+            width: 640px;
+            margin: 0 auto;
+        }
+        #videoFeed {
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hand Gesture Detection</h1>
+    <div id="videoContainer">
+        <img id="videoFeed" src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+
+    <script>
+        const videoFeed = document.getElementById('videoFeed');
+
+        videoFeed.onload = () => {
+            // Optionally, you can perform any initialization actions here
+        };
+    </script>
+</body>
+</html>
