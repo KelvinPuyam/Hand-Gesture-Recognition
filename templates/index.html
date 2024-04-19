@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hand Gesture Detection</title>
+    <title>Hand Gesture Recognition</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,17 +23,7 @@
     </style>
 </head>
 <body>
-    <h1>Hand Gesture Detection</h1>
-    <div id="videoContainer">
-        <img id="videoFeed" src="{{ url_for('video_feed') }}" width="640" height="480">
-    </div>
-
-    <script>
-        const videoFeed = document.getElementById('videoFeed');
-
-        videoFeed.onload = () => {
-            // Optionally, you can perform any initialization actions here
-        };
-    </script>
+    <h1>Hand Gesture Recognition</h1>
+    <button onclick="window.location.href='/video_feed'">Show Hand Gesture Detection</button>
 </body>
 </html>
