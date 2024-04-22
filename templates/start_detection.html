@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Recognition - Video Feed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/035/859/364/small/abstract-white-background-photo.jpg');
+            background-size: cover;
+            padding-top: 20px;
+            color: #333;
+            overflow: hidden;
+            margin: 0;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            margin-top: 0px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .button-stop {
+            background-color: #FF5733;
+        }
+        .button-stop:hover {
+            background-color: #BF3D1B;
+        }
+        .video-container {
+            width: 480px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .video-feed {
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hand Gesture Recognition - Video Feed</h1>
+    <div class="video-container">
+        <img class="video-feed" id="videoFeed" src="{{ url_for('video_feed') }}" alt="Video Feed">
+    </div>
+    <button class="button button-stop" onclick="window.location.href='/'">Stop</button>
+</body>
+</html>
