@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, redirect, url_for
 import cv2
 import numpy as np
 import mediapipe as mp
@@ -54,6 +54,10 @@ def index():
 @app.route('/video_feed')
 def video_feed():
     return Response(generate_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+
+@app.route('/start_detection')
+def start_detection():
+    return render_template('start_detection.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
