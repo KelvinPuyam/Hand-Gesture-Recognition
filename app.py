@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response, redirect, url_for
+from flask import Flask, render_template, Response
 import cv2
 import numpy as np
 import mediapipe as mp
