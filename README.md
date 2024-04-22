@@ -21,7 +21,7 @@ Gesture recognition plays a crucial role in various applications such as virtual
 Before running the project, ensure you have the following installed:
 1. Python 3.x
 2. OpenCV 4.5
-3. MediaPipe 0.8.5
+3. MediaPipe 0.8.11
 4. TensorFlow 2.5.0
 5. NumPy 1.19.3
 
