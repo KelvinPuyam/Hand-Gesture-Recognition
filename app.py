@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, send_from_directory
 import cv2
 import numpy as np
 import mediapipe as mp
@@ -58,6 +58,11 @@ def video_feed():
 @app.route('/start_detection')
 def start_detection():
     return render_template('start_detection.html')
+
+# Route for serving the favicon
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(directory=app.root_path, path='favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == "__main__":
     app.run(debug=True)
